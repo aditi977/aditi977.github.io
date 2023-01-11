@@ -1,0 +1,18 @@
+/* Source: https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image */
+.mypic {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+
+.mypic-wrapper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.content-wrapper {
+    margin: 2%;
+}

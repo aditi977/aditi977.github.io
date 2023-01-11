@@ -1,6 +1,75 @@
-<!DOCTYPE html>
-<head></head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aditi Diwan's Website</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
 <body>
-    <h1>Hello World</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Aditi Diwan   
+                
+            </a>
+        </div>
+    </nav>
+
+    <!-- Nav Menu -->
+    <div class="content-wrapper">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="v-pills-home" aria-selected="true">About Me</button>
+                <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Projects</button>
+            </div>
+            <!-- Content -->
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="mypic-wrapper">
+                        <img class="mypic" src="profile_pic.jpg" alt="Picture of Aditi Diwan"
+                            class="d-inline-block align-text-top">
+                             
+                    </div>
+                    <p class="lead">Introduction</p>
+                    <p>I recently finished my B.S. in Computer Science at Virginia Tech. I'm now continuing as an MEng
+                        student in the Accelarated B.S./M.S program here. Initially, I started out with little to no
+                        coding experience.
+                        During the first summer of the pandemic, I began self-teaching web development. I built a few projects using <span class="badge bg-secondary">HTML</span>,
+                        <span class="badge bg-secondary">CSS</span>, <span class="badge bg-secondary">Javascript</span> and eventually moved on to using libraries like <span class="badge bg-secondary">React</span>. Most recently, I learned
+                        to code a full-stack application using the <span class="badge bg-secondary">VueJS</span> framework in the frontend and <span class="badge bg-secondary">MySQL</span> in the backend (for more info, checkout the
+                        Projects section!). I soon expanded to the cloud and got certified as an <span class="badge bg-secondary">AWS</span> Solutions Architect - Associate. I'm also interested in <span class="badge bg-secondary">Machine Learning</span> and <span class="badge bg-secondary">Data Analytics</span>, and would like to get more hands-on experience in industry. </p>
+                        
+                    <p class="lead">Fun Facts</p>
+                    <ul>
+                        <li>I'm multilingual. I speak Hindi, English, and have limited working proficiency in Spanish.</li>
+                        <li>I've lived on 3 different continents.</li>
+                        <li>I'm a dancer. I was a member of Bhangra at Virginia Tech (2021 - 2022), and currently regularly attend hip hop dance workshops. </li>
+                        <li>I do origami. I've dabbled in most modular origami (kusudamas are my favorite), tesselations (Eric Gjerde!), and roses (Kawasaki Rose is the most elegant, in my opinion)</li>
+            
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Popper for dropdowns, popovers, or tooltips, remove if not needed! -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
