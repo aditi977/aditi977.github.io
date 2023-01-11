@@ -8,14 +8,15 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                Aditi Diwan   
-                
+                Aditi Diwan
+
             </a>
         </div>
     </nav>
@@ -23,18 +24,20 @@
     <!-- Nav Menu -->
     <div class="content-wrapper">
         <div class="d-flex align-items-start">
-            <div data-bs-scroll="true" class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div data-bs-scroll="true" class="nav nav-pills flex-column" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
 
-                <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true">About&nbsp;Me</button>
+                <button class="nav-link active text-nowrap" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">About Me</button>
 
-                <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">Projects</button>
+                <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Projects</button>
 
-                <button class="nav-link" id="certifications-tab" data-bs-toggle="pill" data-bs-target="#certifications" type="button"
-                    role="tab" aria-controls="certifications" aria-selected="false">Certifications</button>
+                <button class="nav-link" id="certifications-tab" data-bs-toggle="pill" data-bs-target="#certifications"
+                    type="button" role="tab" aria-controls="certifications"
+                    aria-selected="false">Certifications</button>
             </div>
-    <!-- Content -->
+            <!-- Content -->
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
@@ -78,68 +81,115 @@
                 <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">
                     <!-- TODO -->
                     <!-- <div>featured projects with pagination go here</div> -->
-                    <div style="display: flex; flex-direction: row; flex-wrap: wrap" >
-                        <div class="card" style="width: 18rem;">
-                            <img src="/images/bookit_bookstore.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">BookIt Bookstore</h5>
-                                <span class="badge bg-secondary">VueJS</span>
-                                <span class="badge bg-secondary">Vuelidate</span>
-                                <span class="badge bg-secondary">MySQL</span>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-secondary disabled">Private repository</a>
+
+                    <div class="container px-4">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                                <div class="card">
+                                    <img src="/images/bookit_bookstore.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BookIt Bookstore</h5>
+                                        <span class="badge bg-secondary">VueJS</span>
+                                        <span class="badge bg-secondary">Vuelidate</span>
+                                        <span class="badge bg-secondary">MySQL</span>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                        
+                                    </div>
+                                    <div class="card-footer text-muted text-end p-1">
+                                        <a class="btn disabled" style="border:none;">Private repository</a>
+                                      </div>
+                                    
+                                </div>
                             </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="/images/book_of_creativitea.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Book of Creativitea</h5>
-                                <span class="badge bg-secondary">HTML</span>
-                                <span class="badge bg-secondary">CSS</span>
-                                <span class="badge bg-secondary">turn.js</span>
-                                <span class="badge bg-secondary">jQuery</span>
-                                <p class="card-text">This is the first anthology for CreativiTea, a creative writing club at
-                                    Virginia Tech. I created this digitally to make it accessible to others during the pandemic.
-                                    Using turn.js, I was able to animate the book to flip like pages in a real book! The only
-                                    issue I encountered was making the book responsive. </p>
-                                <a target="_blank" href="https://creativiteaant.github.io/ctvt-anthology/" class="btn btn-primary">Check it
-                                    out!</a>
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                                
+                                <div class="card">
+                                    <img src="/images/book_of_creativitea.png" class="card-img-top" alt="...">
+                                    
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book of Creativitea</h5>
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">CSS</span>
+                                        <span class="badge bg-secondary">turn.js</span>
+                                        <span class="badge bg-secondary">jQuery</span>
+                                        <p class="card-text">This is the first anthology for CreativiTea, a creative
+                                            writing
+                                            club at
+                                            Virginia Tech. I created this digitally to make it accessible to others
+                                            during
+                                            the pandemic.
+                                            Using turn.js, I was able to animate the book to flip like pages in a real
+                                            book!
+                                            The only
+                                            issue I encountered was making the book responsive. </p>
+                                        
+                                    </div>
+                                    <div class="card-footer text-end p-1" >
+                                        <a target="_blank" href="https://creativiteaant.github.io/ctvt-anthology/"
+                                            class="btn"> <i class="bi bi-box-arrow-up-right"></i></a>
+                                      </div>
+                                </div>
                             </div>
-                    
-                            
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="/images/batch16.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Image-to-Image Translation with GANs</h5>
-                            <span class="badge bg-secondary">GANs</span>
-                            <span class="badge bg-secondary">Machine Learning</span>
-                            <span class="badge bg-secondary">pix2pix</span>
-                            <p class="card-text">I worked with the pytorch implementation of the pix2pix GAN to add color onto grayscale images. This was part of a Data-Centric Computing capstone project.</p>
-                            <a target="_blank" href="https://github.com/andrewaf1/cs4664-neural-style-transfer" class="btn btn-primary">Github Repo</a>
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                                <div class="card">
+                                    <img src="/images/batch16.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Image-to-Image Translation with GANs</h5>
+                                        <span class="badge bg-secondary">GANs</span>
+                                        <span class="badge bg-secondary">Machine Learning</span>
+                                        <span class="badge bg-secondary">pix2pix</span>
+                                        <p class="card-text">I worked with the pytorch implementation of the pix2pix GAN
+                                            to
+                                            add color onto grayscale images. This was part of a Data-Centric Computing
+                                            capstone project.</p>
+                                        
+                                    </div>
+                                    <div class="card-footer text-end p-1">
+                                        <a target="_blank" 
+                                            href="https://github.com/andrewaf1/cs4664-neural-style-transfer"
+                                            class="btn"><i class="bi bi-github" ></i></a>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                                <div class="card">
+                                    <img src="/images/calcheck.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Calcheck</h5>
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">CSS</span>
+                                        <span class="badge bg-secondary">jQuery</span>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk
+                                            of the card's content.</p>
+                                        
+                                            
+                                            
+                                    </div>
+                                    <div class="card-footer text-end p-1 text-muted">
+                                        <a target="_blank" href="https://github.com/aditi977/CalCheck-2.0"
+                                            class="btn"><i class="bi bi-github"></i></a>
+                                      </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="/images/calcheck.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Calcheck</h5>
-                            <span class="badge bg-secondary">HTML</span>
-                            <span class="badge bg-secondary">CSS</span>
-                            <span class="badge bg-secondary">jQuery</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a target="_blank" href="https://github.com/aditi977/CalCheck-2.0" class="btn btn-primary">Github Repo</a>
-                        </div>
-                    </div>
 
                     </div>
-                
+
                 </div>
-                <div class="tab-pan fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab" tabindex="0">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="761b9c2a-a324-48e0-997a-3337d8dde40b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div class="tab-pan fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab"
+                    tabindex="0">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                        data-share-badge-id="761b9c2a-a324-48e0-997a-3337d8dde40b"
+                        data-share-badge-host="https://www.credly.com"></div>
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                 </div>
-                
+
             </div>
         </div>
     </div>
