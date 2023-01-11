@@ -18,11 +18,11 @@
     margin: 2%;
 }
 
-/* Modifying Bootstrap provided classes */
+
 .tab-content {
-    padding: 0 2%;    
+    padding: 0 2% o !important;    
 }
 
-.card {
+#projects div > div {
     margin: 10px;
 }
