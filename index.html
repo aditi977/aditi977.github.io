@@ -23,41 +23,123 @@
     <!-- Nav Menu -->
     <div class="content-wrapper">
         <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div data-bs-scroll="true" class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
                 <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="v-pills-home" aria-selected="true">About Me</button>
-                <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Projects</button>
+                    role="tab" aria-controls="home" aria-selected="true">About&nbsp;Me</button>
+
+                <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Projects</button>
+
+                <button class="nav-link" id="certifications-tab" data-bs-toggle="pill" data-bs-target="#certifications" type="button"
+                    role="tab" aria-controls="certifications" aria-selected="false">Certifications</button>
             </div>
-            <!-- Content -->
+    <!-- Content -->
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
                     <div class="mypic-wrapper">
                         <img class="mypic" src="profile_pic.jpg" alt="Picture of Aditi Diwan"
                             class="d-inline-block align-text-top">
-                             
+
                     </div>
                     <p class="lead">Introduction</p>
-                    <p>I recently finished my B.S. in Computer Science at Virginia Tech. I'm now continuing as an MEng
+                    <p>Hi I'm Aditi! I recently finished my B.S. in Computer Science at Virginia Tech. I'm now
+                        continuing as an MEng
                         student in the Accelarated B.S./M.S program here. Initially, I started out with little to no
                         coding experience.
-                        During the first summer of the pandemic, I began self-teaching web development. I built a few projects using <span class="badge bg-secondary">HTML</span>,
-                        <span class="badge bg-secondary">CSS</span>, <span class="badge bg-secondary">Javascript</span> and eventually moved on to using libraries like <span class="badge bg-secondary">React</span>. Most recently, I learned
-                        to code a full-stack application using the <span class="badge bg-secondary">VueJS</span> framework in the frontend and <span class="badge bg-secondary">MySQL</span> in the backend (for more info, checkout the
-                        Projects section!). I soon expanded to the cloud and got certified as an <span class="badge bg-secondary">AWS</span> Solutions Architect - Associate. I'm also interested in <span class="badge bg-secondary">Machine Learning</span> and <span class="badge bg-secondary">Data Analytics</span>, and would like to get more hands-on experience in industry. </p>
-                        
+                        During the first summer of the pandemic, I began self-teaching web development. I built a few
+                        projects using <span class="badge bg-secondary">HTML</span>,
+                        <span class="badge bg-secondary">CSS</span>, <span class="badge bg-secondary">Javascript</span>
+                        and eventually moved on to using libraries like <span class="badge bg-secondary">React</span>.
+                        Most recently, I learned
+                        to code a full-stack application using the <span class="badge bg-secondary">VueJS</span>
+                        framework in the frontend and <span class="badge bg-secondary">MySQL</span> in the backend (for
+                        more info, checkout the
+                        Projects section!). I soon expanded to the cloud and got certified as an <span
+                            class="badge bg-secondary">AWS</span> Solutions Architect - Associate. I'm also interested
+                        in <span class="badge bg-secondary">Machine Learning</span> and <span
+                            class="badge bg-secondary">Data Analytics</span>, and would like to get more hands-on
+                        experience in industry.
+                    </p>
+
                     <p class="lead">Fun Facts</p>
                     <ul>
-                        <li>I'm multilingual. I speak Hindi, English, and have limited working proficiency in Spanish.</li>
+                        <li>I'm multilingual. I speak Hindi, English, and have limited working proficiency in Spanish.
+                        </li>
                         <li>I've lived on 3 different continents.</li>
-                        <li>I'm a dancer. I was a member of Bhangra at Virginia Tech (2021 - 2022), and currently regularly attend hip hop dance workshops. </li>
-                        <li>I do origami. I've dabbled in most modular origami (kusudamas are my favorite), tesselations (Eric Gjerde!), and roses (Kawasaki Rose is the most elegant, in my opinion)</li>
-            
+                        <li>I'm a dancer. I was a member of Bhangra at Virginia Tech (2021 - 2022), and currently
+                            regularly attend hip hop dance workshops. </li>
+                        <li>I do origami. I've dabbled in most modular origami (kusudamas are my favorite), tesselations
+                            (Eric Gjerde!), and roses (Kawasaki Rose is the most elegant, in my opinion)</li>
+
                     </ul>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">...
+                <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">
+                    <!-- TODO -->
+                    <!-- <div>featured projects with pagination go here</div> -->
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap" >
+                        <div class="card" style="width: 18rem;">
+                            <img src="/images/bookit_bookstore.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">BookIt Bookstore</h5>
+                                <span class="badge bg-secondary">VueJS</span>
+                                <span class="badge bg-secondary">Vuelidate</span>
+                                <span class="badge bg-secondary">MySQL</span>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-secondary disabled">Private repository</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/images/book_of_creativitea.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Book of Creativitea</h5>
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">turn.js</span>
+                                <span class="badge bg-secondary">jQuery</span>
+                                <p class="card-text">This is the first anthology for CreativiTea, a creative writing club at
+                                    Virginia Tech. I created this digitally to make it accessible to others during the pandemic.
+                                    Using turn.js, I was able to animate the book to flip like pages in a real book! The only
+                                    issue I encountered was making the book responsive. </p>
+                                <a target="_blank" href="https://creativiteaant.github.io/ctvt-anthology/" class="btn btn-primary">Check it
+                                    out!</a>
+                            </div>
+                    
+                            
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/batch16.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Image-to-Image Translation with GANs</h5>
+                            <span class="badge bg-secondary">GANs</span>
+                            <span class="badge bg-secondary">Machine Learning</span>
+                            <span class="badge bg-secondary">pix2pix</span>
+                            <p class="card-text">I worked with the pytorch implementation of the pix2pix GAN to add color onto grayscale images. This was part of a Data-Centric Computing capstone project.</p>
+                            <a target="_blank" href="https://github.com/andrewaf1/cs4664-neural-style-transfer" class="btn btn-primary">Github Repo</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/images/calcheck.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Calcheck</h5>
+                            <span class="badge bg-secondary">HTML</span>
+                            <span class="badge bg-secondary">CSS</span>
+                            <span class="badge bg-secondary">jQuery</span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a target="_blank" href="https://github.com/aditi977/CalCheck-2.0" class="btn btn-primary">Github Repo</a>
+                        </div>
+                    </div>
+
+                    </div>
+                
                 </div>
+                <div class="tab-pan fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab" tabindex="0">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="761b9c2a-a324-48e0-997a-3337d8dde40b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                
             </div>
         </div>
     </div>
