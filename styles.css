@@ -6,17 +6,13 @@
   }
 
 .mypic-wrapper {
-    width: 100px;
-    height: 100px;
+    width: 12rem;
+    height: 12rem;
     overflow: hidden;
     border-radius: 50%;
     margin: 10px 0;
 }
 
-
-.content-wrapper {
-    margin: 2%;
-}
 
 
 .tab-content {
