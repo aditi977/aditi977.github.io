@@ -8,7 +8,7 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
             <div data-bs-scroll="true" class="nav nav-pills flex-column" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
 
-                <button class="nav-link active text-nowrap" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true">About Me</button>
+                <button class="nav-link active text-nowrap" id="home-tab" data-bs-toggle="pill" data-bs-target="#home"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">About Me</button>
 
                 <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects"
                     type="button" role="tab" aria-controls="profile" aria-selected="false">Projects</button>
@@ -84,7 +84,39 @@
 
                     <div class="container px-4">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3 pb-4">
+                                <div class="card">
+                                    <img src="/images/fert.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fert</h5>
+                                        <span class="badge bg-secondary">Material UI</span>
+                                        <span class="badge bg-secondary">ReactJS</span>
+                                        <span class="badge bg-secondary">Figma</span>
+                                        <span class="badge bg-secondary">HTML5</span>
+                                        <span class="badge bg-secondary">CSS3</span>
+                                        <span class="badge bg-secondary">FrostLine API</span>
+                                        <p class="card-text">This app helps users to start planting edible plants by
+                                            recommending plants based on the user’s location, budget and
+                                            climate conditions. The FrostLine API allows us to input user's zip-code and
+                                            output their temperate zone as well as recommended temperature range.
+                                            For further information on functionalities, check out the README on Github!
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-muted text-end p-1">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <a target="_blank"
+                                                href="https://github.com/aditi977/Fert"
+                                                class="btn"><i class="bi bi-github"></i></a>
+                                            <a class="btn"
+                                                href="https://aditi977.github.io/Fert/"
+                                                target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3 pb-4">
                                 <div class="card">
                                     <img src="/images/bookit_bookstore.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -93,20 +125,24 @@
                                         <span class="badge bg-secondary">Vuelidate</span>
                                         <span class="badge bg-secondary">Pinia</span>
                                         <span class="badge bg-secondary">MySQL</span>
-                                        <p class="card-text">This was developed as part of my CS5244 Web Application Development class. All of the frontend design was done by me as per the classes requirements. It has cart, checkout, and order confirmation functionality. </p>
-                                        
+                                        <p class="card-text">This was developed as part of my CS5244 Web Application
+                                            Development class. All of the frontend design was done by me as per the
+                                            classes requirements. It has cart, checkout, and order confirmation
+                                            functionality. </p>
+
                                     </div>
                                     <div class="card-footer text-muted text-end p-1">
                                         <a class="btn disabled" style="border:none;">Private repository</a>
-                                      </div>
-                                    
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
-                                
+
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3 pb-4">
+
                                 <div class="card">
                                     <img src="/images/book_of_creativitea.png" class="card-img-top" alt="...">
-                                    
+
                                     <div class="card-body">
                                         <h5 class="card-title">Book of Creativitea</h5>
                                         <span class="badge bg-secondary">HTML</span>
@@ -123,15 +159,16 @@
                                             book!
                                             The only
                                             issue I encountered was making the book responsive. </p>
-                                        
+
                                     </div>
-                                    <div class="card-footer text-end p-1" >
+                                    <div class="card-footer text-end p-1">
                                         <a target="_blank" href="https://creativiteaant.github.io/ctvt-anthology/"
                                             class="btn"> <i class="bi bi-box-arrow-up-right"></i></a>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3 pb-4">
                                 <div class="card">
                                     <img src="/images/batch16.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -143,16 +180,22 @@
                                             to
                                             add color onto grayscale images. This was part of a Data-Centric Computing
                                             capstone project.</p>
-                                        
+
                                     </div>
                                     <div class="card-footer text-end p-1">
-                                        <a target="_blank" 
-                                            href="https://github.com/andrewaf1/cs4664-neural-style-transfer"
-                                            class="btn"><i class="bi bi-github" ></i></a>
-                                      </div>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <a target="_blank"
+                                                href="https://github.com/andrewaf1/cs4664-neural-style-transfer"
+                                                class="btn"><i class="bi bi-github"></i></a>
+                                            <a class="btn"
+                                                href="https://andrewfarabow.com/cs4664-neural-style-transfer/"
+                                                target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-sm-12 col-lg-3">
+                            <div class="col-12 col-md-6 col-sm-12 col-lg-3 pb-4">
                                 <div class="card">
                                     <img src="/images/calcheck.png" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -165,14 +208,14 @@
                                         <span class="badge bg-secondary">EJS</span>
                                         <span class="badge bg-secondary">nutritionixAPI</span>
                                         <p class="card-text">A calorie tracking website.</p>
-                                        
-                                            
-                                            
+
+
+
                                     </div>
                                     <div class="card-footer text-end p-1 text-muted">
                                         <a target="_blank" href="https://github.com/aditi977/CalCheck-2.0"
                                             class="btn"><i class="bi bi-github"></i></a>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
