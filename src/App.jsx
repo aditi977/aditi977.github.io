@@ -1,33 +1,33 @@
 import "./App.css";
 import { Box, useColorMode } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { InfoOutlineIcon, StarIcon, SettingsIcon, CheckCircleIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { Text, Tag, Image } from "@chakra-ui/react";
 import me from "./assets/images/dark_mode_me.jpeg";
 import me2 from "./assets/images/light_mode_me.jpeg";
 import { Container } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
+import ProjectCard from "./components/ProjectCard";
+
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  let mode;
-  let myPic;
+  // Set based on color mode
+  const mode = (colorMode == "dark") ? <SunIcon /> : <MoonIcon />;
+  const  myPic = <Image  borderRadius="full" boxSize={[100,200,300]}objectFit="cover" src={(colorMode == "dark") ? me : me2} />;
+  const [ smallerThan560 ] = useMediaQuery('(max-width: 560px)')
+  const baseUrl = '/project_images/'
+  const projects = [
+    { title: 'Calcheck',
+      imgSrc: '/project_images/calcheck.png"',
+      tags: ['HTML', 'CSS', 'jQuery', 'MongoDB', 'ExpressJS', 'EJS', 'nutritionixAPI']
+    }
+  ]
 
-  if (colorMode == "dark") {
-    mode = <MoonIcon />;
-  } else {
-    mode = <SunIcon />;
-  }
-
-  
-  if (colorMode == "dark") {
-    myPic = <Image  borderRadius="full" boxSize={[100,200,300]}objectFit="cover" src={me} />;
-  } else {
-    myPic = <Image  borderRadius="full" boxSize={[100,200,300]}objectFit="cover" src={me2} />;
-  }
-
-  
-
+  const projectCards = projects.map((project) => {
+    return <ProjectCard project={project}/>
+  })
 
   return (
     <div>
@@ -40,33 +40,32 @@ function App() {
         
       />
       </Box>
-
+ 
       <Box align='center'>
-        <Text fontSize='xl'>Hi, I'm Aditi!</Text> 
-        
+        <Text fontSize={['md','xl']} mb={4}>Hi, I'm Aditi!</Text> 
         {myPic}
       </Box>
       
 
       <Tabs
-
-        size="sm"
+        size={(smallerThan560 ? "md": "sm")}
         mt={4}
         orientation="horizontal"
-        variant="soft-rounded"
+        variant={smallerThan560? "enclosed": "soft-rounded"}
+        isFitted={smallerThan560? true: false}
         colorScheme="blue"
         align="center"
       >
         <TabList >
-          <Tab> Elevator Speech </Tab>
-          <Tab>Projects</Tab>
-          <Tab>Certifications</Tab>
-          <Tab>Other Interests</Tab>
+          <Tab> {smallerThan560 ? <InfoOutlineIcon/> : 'Elevator Speech'} </Tab>
+          <Tab>{smallerThan560 ? <SettingsIcon/> : 'Projects'}</Tab>
+          <Tab>{smallerThan560 ? <CheckCircleIcon/> : 'Certifications'}</Tab>
+          <Tab>{smallerThan560 ? <StarIcon/> : 'Other Interests'}</Tab>
         </TabList>
 
         <TabPanels>
           <TabPanel>
-            <Container maxW='2xl'>
+            <Container maxW='2xl' p={0}>
             <Text fontSize="sm">
               I recently finished my B.S. in Computer Science at
               Virginia Tech. I'm now continuing as an MEng student in the
@@ -88,13 +87,14 @@ function App() {
             
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <p>Projects</p>
+            {projectCards}
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
+            <p>Certifications</p>
           </TabPanel>
           <TabPanel>
-            <p>four!</p>
+            <p>Other Interests</p>
           </TabPanel>
         </TabPanels>
       </Tabs>
