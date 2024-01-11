@@ -18,6 +18,9 @@ import { useMediaQuery } from "@chakra-ui/react";
 import ProjectCard from "./components/ProjectCard";
 import { projectImages, projectInfoMap } from "./project_images";
 
+import { faAws } from '@fortawesome/free-brands-svg-icons'
+import CertBadge from "./CertBadge";
+
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -137,7 +140,9 @@ function App() {
               </SimpleGrid>
             </TabPanel>
             <TabPanel>
-              <p>Certifications</p>
+              <SimpleGrid columns={{ sm: 1, xl: 2 }} spacing={2} justifyItems={"center"}>
+                <CertBadge icon={faAws} />
+              </SimpleGrid>
             </TabPanel>
             <TabPanel>
               <p>Other Interests</p>
